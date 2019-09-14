@@ -1,0 +1,12 @@
+Study Area,Drift Type,Drift Area [m^2],Mean Drift Depth [m],Mean Drift Volume [m^3],Std. Drift Depth [m],Median Drift Depth [m],CV Drift Depth,Volume:Area Ratio
+CLPX,lake,23832.87,1.11,26790.93,0.25,1.09,0.22,1.11
+CLPX,other,212890.41,0.87,186951.75,0.13,0.86,0.15,0.87
+CLPX,outcrop,5432.37,1.32,7523.19,0.35,1.31,0.26,1.32
+CLPX,polygon,370.17,0.89,350.7,0.11,0.88,0.12,0.9
+CLPX,stream,20247.73,1.29,25456.22,0.32,1.28,0.25,1.29
+CLPX,watertrack,2288.22,0.87,2056.39,0.1,0.86,0.11,0.86
+HV,lake,71679.4,1.31,93953.47,0.3,1.32,0.23,1.31
+HV,other,12722.1,0.98,11358.4,0.19,0.98,0.19,0.98
+HV,polygon,850.86,0.84,720.4,0.1,0.84,0.11,0.85
+HV,stream,2182.59,1.1,2420.86,0.29,1.09,0.26,1.1
+HV,watertrack,20968.37,0.93,20217.42,0.28,0.88,0.31,0.92
