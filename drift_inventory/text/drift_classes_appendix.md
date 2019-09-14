@@ -1,26 +1,3 @@
-# Drift Classification
-
-Using our drift definition technique (see previous section, Figure __ Table _) we computed snowdrift masks for each snow depth map from CLPX and HV (N=12). Then, using a combination of the snowdrift mask, a topographic hillshade map, and snow-free satellite imagery, we manually delineated 59 discrete snowdrifts of six distinct types (N number): water track (22), stream (7), polygon (12), outcrop (5), lake (7), and "other" (6) and computed the zonal snow depth statistics for each snowdrift (Table __). This classification was implemented to account for the variety of snowdrift features present across the two domains and to create categories representative of the landscape feature thought to trap the blowing snow. Water tracks (c.f. McNamara et al.,  1998; Paquette et al., 2017) are hillslope water drainage pathways that are common in permafrost regions and include a broad range of geomorphic, soil, and vegetation characteristics (Trochim et al., 2016). Water track snowdrifts are present at both HV and CLPX. Water track snowdrifts are more frequently limited by the size of the catchement than by the available flux - they are filling drifts. However, the water track snowdrifts are strongly influenced by their neighbors because they often occur in parallel sets (e.g. Figure__.) The drifting of some water tracks may be limited by their upwind neigbor if that drift has not filled yet. Polygon snowdrifts are consistently found in the troughs left behind by ice wedge degradation. The centers of the polygons are exposed to scouring and snow drifts into the cracks between the polygons. While polygonal features are not abundant in our North Slope domains, they are representative of large stretches of Alaska's coastal plain (REFs). Like water track drifts, stream drifts line the banks of drainage channels but are larger and can include beaded streams, glacial rivers, and meandering creeks. While the width of stream drifts can range from several to hundreds of meters and thus overlap with watertracks of the same dimension, they are distinguished by having a steeper cutbank (from greater erosionand channel incision) than watertracks. Stream drifts may or may not reach equilibrium depending on the size of the catchment and the amount of flux. The ulimate stream snowdrift profile is also 
-determined by whether or not the windward positive break in slope (e.g. the far cutbank) is creating a secondary rotor in which snow settles out. For sufficiently large snowdrifts (e.g. Meade River, Benson & Sturm (1993) this "blowback" affect is absent, but for smaller streams contributes strongly to drift geometry (e.g. Put River?, REF?). The outcrop drifts lie in the lee of exposed sedimentary rocks (geol. map) left behind by the __ glaciation. Occuring only in the CLPX domain, the outcrop drifts have often have a steep or cliff leeward face which triggers the snowdrift and may have a similar feature (and drift) on the windward side as well. Lake drifts, once filled, often form smooth 'aprons' sloping downward from the upwind break in slope toward the lake ice itself. Unfilled lake drifts may be far more dramatic (Fig. of Lake). Many lake drifts are tightly coupled with conjugate score zones. How does relatively poor sintering on lake ice impact lake drift tails? Finally, the "other" drifts have no obvious nearby features that aid interpretation. They lack a clear flow separation point, yet they occur most frequently on mild hillslopes of only a few degrees.
-
-Results of all snowdrifts are in figure:
-
-There are two functional relationships between drift type and snow: the volume-area ratio (VAR) (Figure __) and the coefficient of variance (CV) of snow depth (Figure __). These factors help us understand 1) the volume of snow each type of drift typically traps normalized by the size of the feature, and 2) how variable snow depth is within the drift normalized by the mean depth. From these relationships we see a general trend between filling and nonfilling snowdrifts. Where VAR <= about 1 we see filling drifts: small watertracks and polygon drifts. Where most VAR values
-
-## Discussion
-
-Some Drifts Fill more than others.
-
-
-Discussion: Is there a relationship between max. VA ratio and equilibirum profile:
-Construct artificial EQ drift and what is the va ratio and what is the slope?
-
-Can area predict VAR? Is it different for filling vs. nonfilling?
-
-What is the cutoff distance where wind no longer positive slope (far riverbank) has influence?
-
-Manually delinateing drifts is efficient although not easily automated. The need for topographic and geographic map interpretation, as well as the highly connected nature of snowdrifts (as they are related to hydrography) makes automatically separating and classifying drift types difficult. A more concerted automatic classifying effort could make progress using geomorphometry and hydrographic data.  
-
 
 ## Appendix
 
@@ -85,3 +62,4 @@ Manually delinateing drifts is efficient although not easily automated. The need
 | other      | CLPX       | 33535\.34          | 0\.878                 | 29439\.032                | 0\.116                  | 0\.864                   | 0\.132         | 0\.878            |
 | other      | CLPX       | 319265\.067        | 0\.884                 | 282189\.328               | 0\.136                  | 0\.887                   | 0\.154         | 0\.884            |
 | other      | CLPX       | 463122\.953        | 0\.877                 | 406252\.359               | 0\.138                  | 0\.875                   | 0\.157         | 0\.877            |
+
