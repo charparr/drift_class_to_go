@@ -1,41 +1,40 @@
-# Drift Classification
+# Snowdrift Classification
 
 ## Methods
 
-Binary snowdrift masks were computed for each snow depth map (N=12) by applying our depth threshold snowdrift identification method (Figure __, Table __). From these masks we manually delineated 59 snowdrifts with high year-to-year fidelity (similarity?). Then, using the snowdrift mask, a topographic hillshade map, and snow-free imagery, we classified each snowdrift based on its geography (not its snow) into one of six distinct types: water track (N=22), stream (N=7), polygon (N=12), outcrop (N=5), lake (N=7), and "other" (N=6). Each class is associated with a distinct landscape feature, and together are representative of the variety of snowdrift features found throughout the two domains.
+Binary snowdrift masks were computed for each snow depth map (N=12) by applying our depth threshold snowdrift identification method (Figure __, Table __). From these masks we manually delineated 59 snowdrifts with high year-to-year fidelity (similarity?). Then, using the snowdrift mask, a topographic hillshade map, and snow-free imagery, we classified each snowdrift based on its geography (not its snow) into one of six distinct types: water track (N=22), stream (N=7), polygon (N=12), outcrop (N=5), lake (N=7), and "other" (N=6) (Figure 1). Each class is associated with a distinct landscape feature, and together are representative of the variety of snowdrift features found throughout the two domains.
+
+###### Figure 1. Six classes of snowdrift. Red polygon is manual delineation of the snowdrift feature.
+
+<img src="../figs/multipanel.png">
 
 ## Snowdrift Classes
 
 ### Water track
-
-Water tracks (c.f. McNamara et al.,  1998; Paquette et al., 2017) are hillslope water drainage pathways that are common in permafrost regions and encompass a broad range of geomorphic, soil, and vegetation characteristics (Trochim et al., 2016). Water track snowdrifts are abundant within HV and CLPX. The width and depth of an individual watertrack are limited by channel-forming procceses (i.e. runoff driven) and substrate properties (e.g. permafrost limits water track depth). These limits frequently constrain water track growth such that filling (a.k.a. Equilibrium, complete) snowdrifts are typical (Figure XXb). A water track rarely occurs in isolation - they are freuqently found in complex networks of linear or curvi-linear drainages, often running down a hilllslope together in near-pararllel fashion. (Figure XXa). Although the entire network is often covered by filling drifts, each individual drift likely fills at a slightly different rate because of how upwind water tracks can rob the downwind water tracks of flux. Within a certain fetch distance, a downwind water track will be starved for flux until the upwind neighbor reaches equilibium profile, thereafter passing the flux it would have trapped on to the next drift. In a flux-starved state, accumulation in a water track drift will be limited to precipitation and the flux from any immediately adjacent upwind scour zones (e.g. a raised, exposed interfluve). While we lack data on erosional rates, it is possible this staggered pattern of drifting and filling is directly related to water track growth and size (nivation), (Figure; integrated flux vs. Easting).
+Water tracks (c.f. McNamara et al.,  1998; Paquette et al., 2017) are hillslope water drainage pathways that are common in permafrost regions and encompass a broad range of geomorphic, soil, and vegetation characteristics (Trochim et al., 2016). Water track snowdrifts (Figure 1a) are abundant within HV and CLPX. The width and depth of an individual watertrack are limited by channel-forming procceses (i.e. runoff driven) and substrate properties (e.g. permafrost limits water track depth). These limits frequently constrain water track growth such that filling (a.k.a. Equilibrium, complete) snowdrifts are typical (Figure XXb). A water track rarely occurs in isolation - they are freuqently found in complex networks of linear or curvi-linear drainages, often running down a hilllslope together in near-pararllel fashion. (Figure XXa). Although the entire network is often covered by filling drifts, each individual drift likely fills at a slightly different rate because of how upwind water tracks can rob the downwind water tracks of flux. Within a certain fetch distance, a downwind water track will be starved for flux until the upwind neighbor reaches equilibium profile, thereafter passing the flux it would have trapped on to the next drift. In a flux-starved state, accumulation in a water track drift will be limited to precipitation and the flux from any immediately adjacent upwind scour zones (e.g. a raised, exposed interfluve). While we lack data on erosional rates, it is possible this staggered pattern of drifting and filling is directly related to water track growth and size (nivation), (Figure; integrated flux vs. Easting).
 
 ### Polygon
-
-Polygon snowdrifts occur in the ice wedge degradation troughs and may be found throughout an area of polygonal ground. The higher polygon centers are exposed to scour and snow is trapped beteen polygons. While polygonal features less abundant in our two domains, they are representative of large nearby stretches of Alaska's coastal plain (REFs (e.g. 1002 one)). Like watertracks, these snowdrifts are limited in size by the landscape (inter-polyon crack size depends on ice wedge degradation) and so they too frequently fill with snow. Networks of connected polygon snowdrifts are common and they unlikely to occur in isolation - meaning their filling rate is influenced by upwind neighbors as well. 
+Snowdrifts fill the networks of cracks between high-centered polygons (cf. Gamon et al 2012; Jorgenson and Osterkamp 2005) whose distribution is linked to ice wedges and their melting. Such polygon snowdrifts (Figure 1c) occur on spatial scales of several and up to tens of meters. The raised polygon centers are exposed scour zones while the inter-polygon troughs trap blowing snow.
+These drifts are less abundant in our two domains because of their foothill geography, they are ubiquiitous in Arctic lowlands such as the coastal plain (.e.g. ANWR 1002 area). Like watertracks, these snowdrifts are often filling and thus limited in growth by the depth and width of the inter-polygon trough., which are related to ice wedge degradation. Polygon snowdrifts are unlikely to occur in isolation and so their filling rate is also influenced by the filling state of neighboring uppwind drifts.
 
 ### Stream
-
-Stream snowdrifts line the banks of drainage channels ranging in scale from small creeks to beaded streams to broad, braided glacial rivers. Some of these drainages overlap in geographic scale with water tracks, yet they are all distinguished from water tracks by having a sharp change in slope at the upwind lip of the drift trap. The depth and width of these stream snowdrift traps is a function of channel morphology processses - and so this snowdrift class includes both nonfilling and filling snowdrifts depending on the size of the catchement in relation to the amount of flux. The nonfilling kind record the upper flux limit for a winter (Benson ____). When the width of a stream trap is sufficiently small, the downwind lip of the trap can also influence the wind field and cause secondary snowdrift effects which influence the ultimate surface profile of the drift. For wide glacial rivers this "blowback" affect is absent, but for smaller streams it contributes to drift geometry and depth distribution (e.g. Put River?, REF?). The presence of snowdrifts on opposing banks is a good indicator that the flux source is at least bidirectional.
+Stream snowdrifts line the banks of drainage channels ranging in scale from small creeks to beaded streams to broad and braided glacial rivers. While some of these drainages may overlap in scale with water tracks, they are distinguished by having a sharper break in slope (i.e. a high profile curvature point) at the upwind edge of the channel. These sharp features (e.g. river cutbanks and bluffs) can create enormous snowdrifts when their trap volume (catchement depth * catchement width) exceeds the available winter flux - and in these instances such a nonfilling stream snowdrift is a record of the winter's flux from a certain direction (Benson ____). Stream snowdrifts bifurcate into filling and nonfilling types based on this flux to trap volume ratio. Trap volume is governed by channel processes. For stream drifts, the trap width alone plays an important role in snowdrift shape: if a trap is narrow enough the downwind edge of the channel also has a rotor effect on the wind field and creates a "snowdrift" on the opposite bank. Linear drainage channels may be good indicators of flux directions -they may have drifts on opposing banks indication a bidirectional source, for example, or snowdrifts may be conspicously absent after a 90 degree bend in the channel.
 
 ### Lake
-Lakes, by nature of their shape, are often buffered by snow-trapping topography (where the lake depression begins to deviate from the surrounding landscape i.e. change in landscape curvature) and so lake snowdrifts are good indicators for the directionaly of the flux source (absent a confounding upwind landscape feature). When filled, lake snowdrifts form smooth 'aprons' of a near-constant slope that can span substantial (~5 m) differences in elevation between the start of the drift and the lake ice below. Like stream drifts, nonfilling lake drifts are far more dramatic with sharp cornice precipices.
+Unlike the linear stream drifts, lake snowdrifts (Figure 1c) are often surrounded on all sides by topography with the potential to trap blowing snow.
+An imaginary isolated, infinitely incised lake woulc be a perfect drip trap capable of locking up all flux from all directions. Absent a confounding upwind landscape feature, lake drifts are also good indicators of flux direction. When filled, lake snowdrifts form smooth 'aprons' of a near-constant slope that can span substantial (~5 m) differences in elevation between the start of the drift and the lake ice below. Nonfilling lake drifts are often dramatic with sharp, corniced precipices.
 
-### Outcrop & Other
+### Outcrop
+Outcrop snowdrifts occur in the lee of exposed sedimentary rocks (and so are only within CLPX) left behind by the Itkilik and Sagavanirktok glaciations of III to JJJ years ago. (geol. map REF). Outcrops snowdrifts are generally of two kinds: First, there are outcrops with drifts in the lee of steep windward faces that may also have wind hollows (REF) along their flanks and a "secondary" smaller snowdrift growing up against the windward side. Second, there are ourcrops with steep leeward faces where the windward feature is a ramp leading to the sharp cliff. This second type may function similarly to nonfilling stream drifts, although comparison is difficult because they have no well defined potential trap (and trap volume). The first type is more akin to an obstacle drift and may find better parallels in urban or forested drift environments. 
 
-At CLPX outcrop snowdrifts occur the lee of exposed sedimentary rocks left behind by the glaciation (geol. map). The steep windward face of the outcrop snowdrift is an obstacle that generates an eddy in its lee which traps blowing snow. These type of obstacle drifts may also have wind hollows (REF) along their flanks and a seconadr, smaller snowdrift growing on the windward side as well. Finally, the "other" snowdrift class has no obvious proximal cause or other obvious landscape feature that aids interpretation. However, they frequently occur on mild hillslopes of only a few degrees suggesting an upwind ridge is creating an 'aspect' drift similar to the ridge-top wind transport and loading process common in alpine snowcovers.
+### Other
+Finally, the "other" snowdrift class has no obvious proximal cause or other conspicous landscape feature that aids interpretation. However, in our limited survey they frequently occur on hillslopes with mild grades of only a few degrees - suggesting that perhaps an upwind topographic ridge (or hillcrest) is creating an "aspect" (?) snowdrift in a similar fashion to the ridgeline wind transport and loading processes common in alpine snowcovers.
 
 ## Results
 
-The census of 59 snowdrifts yielded 22 Water track, 12 polygon, 7 stream, 7 lake, 5 outcrop, and 6 "other" snowdrifts. Zonal snow depth raster statisitcs were computed for each census member (Table 1). The snowdrift volume to snowdrift area ratio (SVAR) and the coefficient of variance (CV) (Figure 2) of snow depth describe the area normalized snowdrift intensity and snowdrift capacity. Snowdrifts with SVAR values less that about 1.0 (red line, Figure 1) are mostly of the filling type: watertrack, polygon, and 'other'. Even normalized by area, the lake, stream, and outcrop drifts have higher VAR values because they are nonfilling to various degrees. VAR is a sense of how filled a snowdrift is in the context of the snowdrift class because each class has a different 3-D shape (e.g. Kuz'Min, Rikhter), or a characteristic shape that the snow can fill. The upper SVAR limit for each class (max SVAR = equiblibirum profile) will be different for a box shaped polygon crack than for a "spoon" shape like  water track.
+The census of 59 snowdrifts yields 22 water track, 12 polygon, 7 stream, 7 lake, 5 outcrop, and 6 "other" snowdrifts. Zonal snow depth raster statistics were computed for each census member (Table 1).
 
-The biggest filled drift is a minimux bound on the winter flux?
-
-
-
-The relationship of snowdrift class to SVAR and CV help dilineate filling and nonfilling snowdrifts and highlight landscape-level differences between the CLPX and HV domains. Where VAR <= about 1.0 snowdrifts are are likely the filling type and are comprised mostly of the water track and polygon class. These of course are relatively smaller snowdrifts and include more of the HV sample (%) than the CLPX sample (%). When filled you have the most equitable depth - area distribution (a lower SVAR). Snowdrifts that that remain unfilled do so because the holes they have are too great for the amount of flux.
-
-###### Table 1: Snowrift Zonal Statistics by Study Area and Snowdrift Class.
+###### Table 1: Zonal Statistics by Study Area and Snowdrift Class.
 
 | Study Area | Drift Type | Drift Area [m^2] | Mean Drift Depth [m] | Mean Drift Volume [m^3] | Std. Drift Depth [m] | Median Drift Depth [m] | CV Drift Depth | Volume:Area Ratio |
 |:----------:|:----------:|:----------------:|:--------------------:|:-----------------------:|:--------------------:|:----------------------:|:--------------:|:-----------------:|
@@ -51,30 +50,33 @@ The relationship of snowdrift class to SVAR and CV help dilineate filling and no
 |     HV     |   stream   |      2182.59     |          1.1         |         2420.86         |         0.29         |          1.09          |      0.26      |        1.1        |
 |     HV     | watertrack |     20968.37     |         0.93         |         20217.42        |         0.28         |          0.88          |      0.31      |        0.92       |
 
+The snowdrift volume [m<sup>3</sup>] to snowdrift area [m<sup>2</sup>] ratio (SVAR) is greater for nonfilling drifts (outcrop, stream, lake) because they can trap more snow in a drift per unit area than their filling counterparts (water track, polygon, and perhaps "other"). In fact, snowdrifts with SVAR values less than about 1.0 (red line, Figure 2) are mostly of the filling type.
+SVAR is in a sense a measure of how filled a snowdrift is with respect to its class because each class has a different, characteristic 3-D shape (e.g. Kuz'Min, Rikhter) that can be filled by drifting snow.
 
-###### Figure 1. SVAR by Snowdrift Class
+###### Figure 2. SVAR by Snowdrift Class
 
 <img src="../figs/drift_type_x_volume_area_ratio_y.png">
 
-###### Figure 2. CV by Snowdrift Class
+
+The coeffcient of variance (CV) of snowdrift depth (Figure 3) infers the type of snow depth probabilty distribution one might find within each drift class. Polygon drift CV values are quite low indicating a more uniform depth distribution, likely an artifact of their filling nature and box-like geometry. Depths at polygon drift edges are not much different than the depths at drift centers. The range of CV values for water track drifts is surprising and highlights landscape-level differences in the drift regimes between CLPX and HV. All CLPX water track drifts have CV values less than 0.20 suggesting a different, more uniform trap geometry than for watertracks at HV. Lake and stream snowdrifts have overlapping CV values reflecting the similarity of their trap shapes and potential to manifest as filling or nonfilling drifts. The outcrop drifts have a wide range of CV values.
+
+###### Figure 3. CV by Snowdrift Class
 
 <img src="../figs/drift_type_x_cv_depth_y.png">
 
-
-The CV tells us about the 3-D shape of the trip. Polygon drifts have the lowest CV values, probably because they are filling drifts that have a box-like geometry caused by their depth at the edge being similar to the depth at the center. Watertracks at CLPX and Happy Valley are different. Lakes and Stream drifts have similar CVs, while Outcrop CV is variable.
-
-
-Additionaly, there is a linear function between area and volume that is characteristic of each snowdrift class.
-
 ## Discussion
+Filled drifts have lower SVAR values because their potential trap volume is too great to be filled by the available flux. The theoretical maximum SVAR for a certain drift is related to its equilbirium profile (Compute these? What does the SVAR look like for a Tabler profile?). Then we can know how far from filling they are and what the SVAR limit is. If we construct an artificial equilbrium drift what is the SVAR and what is the maxiumum slope of the drift?
+The upper SVAR limit will be different for a box shaped polygon crack than for a "spoon" shape like a water track. There is linear relationship between snowdrift area and volume that is characteristic of each snowdrift class (Figure 4).
 
-Some Drifts Fill more than others.
+###### Figure 4. Least-squares Regression by Snowdrift Class
+
+<img src="../figs/snowdrift_class_area_volume_linreg_3x2.png">
 
 
-Discussion: Is there a relationship between max. VA ratio and equilibirum profile:
-Construct artificial EQ drift and what is the va ratio and what is the slope?
 
-Can area predict VAR? Is it different for filling vs. nonfilling?
+The slopes of these lines (ranging between 0.8574 (polygon) and 1.5577 (outcrop) are the drift SWE [m] per unit area of drift type. Some landscapes (e.g. those rich in outcrops rather than polygons) are more "primed" for snowdrift.
+
+
 
 What is the cutoff distance where wind no longer positive slope (far riverbank) has influence?
 
