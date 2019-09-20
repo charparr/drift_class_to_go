@@ -51,7 +51,7 @@ The census of 59 snowdrifts yields 22 water track, 12 polygon, 7 stream, 7 lake,
 |     HV     | watertrack |     20968.37     |         0.93         |         20217.42        |         0.28         |          0.88          |      0.31      |        0.92       |
 
 The snowdrift volume [m<sup>3</sup>] to snowdrift area [m<sup>2</sup>] ratio (SVAR) is greater for nonfilling drifts (outcrop, stream, lake) because they can trap more snow in a drift per unit area than their filling counterparts (water track, polygon, and perhaps "other"). In fact, snowdrifts with SVAR values less than about 1.0 (red line, Figure 2) are mostly of the filling type.
-SVAR is in a sense a measure of how filled a snowdrift is with respect to its class because each class has a different, characteristic 3-D shape (e.g. Kuz'Min, Rikhter) that can be filled by drifting snow.
+SVAR is in a sense a measure of how filled a snowdrift is with respect to its class because each class has a different, characteristic 3-D shape (already recognized by Kuz'Min, Rikhter) that can be filled by drifting snow.
 
 ###### Figure 2. SVAR by Snowdrift Class
 
@@ -74,7 +74,14 @@ The upper SVAR limit will be different for a box shaped polygon crack than for a
 
 
 
-The slopes of these lines (ranging between 0.8574 (polygon) and 1.5577 (outcrop) are the drift SWE [m] per unit area of drift type. Some landscapes (e.g. those rich in outcrops rather than polygons) are more "primed" for snowdrift.
+The slopes of these lines (ranging between 0.8574 (polygon) and 1.5577 (outcrop) are the drift SWE [m] (?) per unit area of drift type. The spread in slopes (almost a factor of 2, Figure 5)  indicates that some landscapes are far more "primed" to trap snow in drifts than others.        
+
+###### Figure 4. Least-squares Regression for each Snowdrift Class with y-intercepts set to zero and plotted on a common range.
+
+<img src="../figs/snowdrift_class_area_volume_linreg_all_set_yint0.png">
+
+If they truly existed on a small scale (like 0 to 100 square meters in this figure) we would expect the spread to be even greater because the nonfilling drifts would now likely be filled - thereby increasing the SVAR to the limit (stockpiling as much drift SWE as possible).
+
 
 
 
