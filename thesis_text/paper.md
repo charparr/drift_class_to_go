@@ -36,21 +36,38 @@ Each winter between 2012 and 2018 (except 2014) we mapped the snow depth across 
 ###### Figure 3. Field Areas on Alaska's North Slope. 
 <img src="figs/pngs/f3_field_areas.png">
 
-###### Table __ Field Area Swaths and Physiography
+###### Table 1 Field Area Swaths and Physiography
 
 ## Snow Depth Mapping Methods
 Snow depth mapping was done using SfM photogrammetry (2015 though 2018) or lidar (2012, 2013) and then adjusted to ground-based measurements. The area mapped covered about 150 km<sup>2</sup> each year. We conducted: (1) airborn surveys of the snow-free surface in June which were used to produce a digital elevation model (DEM) of each swath, (2) airborne surveys of near-peak snow cover in April that were used to create digital surface models (DSMs) of the snow surface over the swaths. We then generated high resolution (1 m) snow depth maps by subtracting the DEM from the snow-covered DSMs. Six such depth maps were produced for each swath between 2012 and 2018 (save 2014), comprising over 600 million individual geospatial snow depth records. The hardware, software, and processing steps used to go from the airborne survey data (photos or lidar returns) is described in Nolan et al., 2015, King et al., 2019, and others (REFS). Data is available at WEBSITE.
 
 Acquiring the DEM was problematic because tundra plants often leaf out before snowdrifts completely melt out. We acquired an initial DEM using airborne lidar in 2012 and a second DEM using SfM in 2017. Both were acquired in early June, but in 2017 remnant snowdrifts covered some import parts of the field area. The 2017 DEM, however, was derived from a denser point cloud and therefore better where not obscured by snow. The two DEMs were fused together to leverage their respective strengths.
 
-The six snow depth maps for CLPX and HV were validated and adjusted using 141,207 direct probe measurements of snow depth collected concurrently with the airborne surveys (Fig __ and Appendinx , also Deems et al., 2013, Westoby et al., 2013, Currier at al, 2019). Differences between snow depth maps (raster data) and field probe measurements (vector data) arise from errors in converting point clouds to gridded surface models and from geolatocation errors in both sets of data. The probe measurements, which use a WAAS-corrected GPS, have a positional uncertainty of ± 2.5 m and a quasi-random vertical depth uncertainty ranging from 0 to 0.05 m caused by a tendency to 'over-probe' down into the subtrate below the snow (Sturm and Holmgren, 2018). The DEMs and DSMs have a position uncertainty estimated to be ± 0.30 m (Nolan et al., 2015), resulting in snow depth pixel locations accurate to about ±0.4 m. Without correcting either pixel or probe positions, we overlaid and differenced the two emasurement sets for each swath and survey (Fig __ and Table __). Mean differences ranged from -0.06 m to 0.40 m (mean = 0.16 m: Fig __). As described by Nolan, we applied a global affine transformation to reduce the mean probe-minus-raster value for each survey to zero. This offset arises the combination of positional and vertical errors, as well as 'pink' noise in the GPS signals over the course of the airborne surveys (refs ?). Once adjusted, the resulting snow depth maps have been shown to be accurate to about ±0.1 m, which with respect to delineating drifts (which are easily 20 time deeper) is insignificant. The resulting accuracy of the maps is comparable to that of other airborne (e.g. Deems et al., 2008; Deems et al., 2013; Jagt at al., 2015; Nolan et al., 2015, Buhler, Harder, Painter) and spaceborne (Marti et al) snow depth mapping efforts.
+The six snow depth maps for CLPX and HV were validated and adjusted using 141,207 direct probe measurements of snow depth collected concurrently with the airborne surveys (Figure 4, also Deems et al., 2013; Westoby et al., 2013; Currier et al, 2019). Differences between snow depth maps (raster data) and field probe measurements (vector data) arise from errors in converting point clouds to gridded surface models and from geolatocation errors in both sets of data. The probe measurements, which use a WAAS-corrected GPS, have a positional uncertainty of ± 2.5 m and a quasi-random vertical depth uncertainty ranging from 0 to 0.05 m caused by a tendency to 'over-probe' down into the subtrate below the snow (Sturm and Holmgren, 2018). The DEMs and DSMs have a position uncertainty estimated to be ± 0.30 m (Nolan et al., 2015), resulting in snow depth pixel locations accurate to about ±0.4 m. Without correcting either pixel or probe positions, we overlaid and differenced the two measurement sets for each swath and survey. Mean differences ranged from -0.06 m to 0.40 m (mean = 0.16 m: Table 2, Figure 5). As described by Nolan, we applied a global affine transformation to reduce the mean probe-minus-raster value for each survey to zero. This offset arises the combination of positional and vertical errors, as well as 'pink' noise in the GPS signals over the course of the airborne surveys (REFS?). Once adjusted, the resulting snow depth maps have been shown to be accurate to about ±0.1 m, which with respect to delineating drifts (which are easily 20 time deeper) is insignificant. The resulting accuracy of the maps is comparable to that of other airborne (e.g. Deems et al., 2008; Deems et al., 2013; Jagt at al., 2015; Nolan et al., 2015, Buhler, Harder, Painter) and spaceborne (Marti et al) snow depth mapping efforts.
 
-###### Figure __ Example of a Validation Campaign at CLPX. _____ ground measurements (small circles) were used to validate and adjust the map.
+###### Figure 4. Example of a field campaign at CLPX. 8,308 MagnaProbe ground measurements (small black circles) were used to validate and adjust the snow depth map.
 
-###### Figure __ All validation box plot
+<img src="figs/pngs/f4_clpx_2015_depth_map_w_probe_points.png">
 
-###### Table __ Probe - Raster Validation Results
+###### Table 2 Probe - Raster Validation Results
+|    Year  |     Field Area   |  Count  |  Mean |  Std. |  Min. |  Max. |
+|:--------:|:--------------:|:-------:|:-----:|:-----:|:-----:|:-----:|
+|    2012  |     CLPX     | 32571 |  0.16 |  0.12 | -0.89 |  1.36 |
+| 2012 | Happy Valley | 24601 | -0.04 |  0.16 | -2.41 |  4.23 |
+| 2013 |     CLPX     | 27555 |  0.21 |  0.11 | -1.13 |  1.49 |
+| 2013 | Happy Valley | 11718 | -0.03 |  0.16 | -1.12 |  1.51 |
+| 2015 |     CLPX     |  8308 |  0.36 |  0.14 | -0.74 |  2.11 |
+| 2015 | Happy Valley |  7030 |  0.18 |  0.14 | -0.67 |  0.8  |
+| 2016 |     CLPX     | 11410 |  0.38 |  0.11 | -0.25 |  1.27 |
+| 2017 |     CLPX     |  6165 |  0.4  |  0.15 | -0.82 |  2.14 |
+| 2017 | Happy Valley |  5797 | -0.05 |  0.18 | -1.89 |  0.84 |
+| 2018 |     CLPX     |  4178 |  0.25 |  0.18 | -0.72 |  0.69 |
+| 2018 | Happy Valley |  1874 | -0.08 |  0.5  | -2.06 |  0.99 |
+|   Mean   ||     12837    |   0.16  |  0.18 | -1.15 |  1.59 | -0.15 |
+|    Sum   ||    141207    |         |       |       |       |       |
 
+###### Figure 5. Box and whisker plots of snow depth map error distributions by year and field area. 
+<img src="figs/pngs/f5_validation_box_and_whisker_by_year_and_field_area.png">
 
 ## Results
 ### A Snowdrift Census
@@ -60,6 +77,113 @@ If we set the drift threshold at zero, then 100% of the area is classified as dr
 
 A drift census using the drift criterion descibed above appears in Table ___. On average (both swaths), 19% of the area was drifts, and these contained ~34% of the total snow by volume. From prior work in the ield area drift snow density typically exceeds 0.4g/cm3, while non-drift snow in the same area varies from 0.25 to 0.35 g/cm3. Thus, the drifts are not only deeper, but denser than non-drift areas, which means that over 45% of the snow mass (or SWE) in the study area was contained in drifts during the period of our study.
 
+### Table 3. Snowdrift census for CLPX and HV field areas.
+
+| Field Area | Year | Drift Area [% total] | Drift Volume [% total] | Drift Area [km^2] | Drift Volume [m^3] | Drift Threshold [% of mean depth] | Drift Threshold [m] | Mean Depth [m] | SD Depth [m] | CV Depth | Total Area [km^2] | Area Normalized Drift Volume [m^3/km^2] |
+|:----------:|:----:|:--------------------:|:----------------------:|:-----------------:|:------------------:|:---------------------------------:|:-------------------:|:--------------:|:------------:|:--------:|:-----------------:|:---------------------------------------:|
+|     HV     | 2013 |         19.2         |          34.48         |        3.97       |      3911711.0     |               130.0               |         0.71        |      0.55      |      0.3     |   0.55   |       20.68       |                 189154.3                |
+|     HV     | 2015 |         17.54        |          26.37         |        5.0        |      5321696.0     |               120.0               |         0.85        |      0.71      |     0.25     |   0.35   |       28.54       |                186464.47                |
+|     HV     | 2018 |         20.0         |          40.71         |        5.59       |      5542494.0     |               140.0               |         0.68        |      0.49      |     0.36     |   0.73   |       27.95       |                198300.32                |
+|     HV     | 2016 |         19.4         |          29.36         |        5.09       |      4034082.0     |               120.0               |         0.63        |      0.52      |     0.21     |   0.41   |       26.26       |                153620.79                |
+|     HV     | 2017 |         15.4         |          30.66         |        4.29       |      4555608.0     |               140.0               |         0.75        |      0.53      |     0.32     |    0.6   |       27.84       |                163635.34                |
+|     HV     | 2012 |         23.48        |          41.23         |        4.45       |      3761374.0     |               120.0               |         0.58        |      0.48      |     0.29     |   0.61   |       18.95       |                198489.39                |
+|    CLPX    | 2018 |         20.28        |          38.2          |       19.03       |     20903926.0     |               140.0               |         0.82        |      0.58      |     0.59     |   1.01   |       93.84       |                222761.36                |
+|    CLPX    | 2016 |         20.79        |          34.24         |       19.38       |     14761273.0     |               130.0               |         0.6         |      0.46      |     0.23     |   0.49   |       93.23       |                158331.79                |
+|    CLPX    | 2013 |         16.96        |          26.24         |       13.36       |     19059286.97    |               130.0               |         0.68        |      0.53      |      0.2     |   0.39   |       94.75       |                201153.42                |
+|    CLPX    | 2017 |         18.17        |          33.07         |       17.14       |     15538119.0     |               140.0               |         0.7         |       0.5      |     0.27     |   0.55   |       94.29       |                164790.74                |
+|    CLPX    | 2015 |         21.57        |          38.38         |       20.59       |     19925392.0     |               140.0               |         0.76        |      0.54      |     0.32     |   0.59   |       95.44       |                208774.02                |
+|    CLPX    | 2012 |         18.7         |          37.3          |       14.42       |     13322102.6     |               150.0               |         0.54        |      0.36      |     0.24     |   0.68   |       93.12       |                143063.82                |
+
+
+###### Figure 5. Box and whisker plots of snow depth map error distributions by year and field area. 
+<img src="figs/pngs/f6_drift_census_ndv_box_and_line.png">
+
+The census statistics (Table 3) for CLPX and HV are remarkably similar despite distinct differences in the physiography of the two swaths (Table 1). This similarity includes area-normalized drift volume (NDV), a metric that essentially reports the depth of snow that would be present over the entire swath if all the snow in the drifts was redistributed evenly, which means drift prevalence was generally the same in both field areas. However, distinct statistical differences appear when we examine the standard devation of NDF, which twice as large for CLPX as HV (0.038 vs. 0.019 m). Even more telling (Fig SSS), mean drift depth for CLPX across all of the surveys was 47% greater than that of HV. 
+
+###### Figure 6. Average Drift Volume vs. Drift Area: Best Fit lines.
+
+### Snowdrift Classification
+
+Binary snowdrift masks were computed for each snow depth map (N=12) by applying our depth threshold snowdrift identification method (Figure __, Table __). From these masks we manually delineated 59 snowdrifts with high year-to-year fidelity (similarity?). Then, using the snowdrift mask, a topographic hillshade map, and snow-free imagery, we classified each snowdrift based on its geography (not its snow) into one of six distinct types: water track (N=22), stream (N=7), polygon (N=12), outcrop (N=5), lake (N=7), and "other" (N=6) (Figure 1). Each class is associated with a distinct landscape feature, and together are representative of the variety of snowdrift features found throughout the two domains.
+
+###### Figure 7. Six classes of snowdrift. Red polygon is manual delineation of the snowdrift feature.
+
+<img src="figs/pngs/multipanel.png">
+
+Water tracks (c.f. McNamara et al.,  1998; Paquette et al., 2017) are hillslope water drainage pathways that are common in permafrost regions and encompass a broad range of geomorphic, soil, and vegetation characteristics (Trochim et al., 2016). Water track snowdrifts (Figure 1a) are abundant within HV and CLPX. The width and depth of an individual watertrack are limited by channel-forming procceses (i.e. runoff driven) and substrate properties (e.g. permafrost limits water track depth). These limits frequently constrain water track growth such that filling (a.k.a. Equilibrium, complete) snowdrifts are typical (Figure XXb). A water track rarely occurs in isolation - they are freuqently found in complex networks of linear or curvi-linear drainages, often running down a hilllslope together in near-pararllel fashion. (Figure XXa). Although the entire network is often covered by filling drifts, each individual drift likely fills at a slightly different rate because of how upwind water tracks can rob the downwind water tracks of flux. Within a certain fetch distance, a downwind water track will be starved for flux until the upwind neighbor reaches equilibium profile, thereafter passing the flux it would have trapped on to the next drift. In a flux-starved state, accumulation in a water track drift will be limited to precipitation and the flux from any immediately adjacent upwind scour zones (e.g. a raised, exposed interfluve). While we lack data on erosional rates, it is possible this staggered pattern of drifting and filling is directly related to water track growth and size (nivation), (Figure; integrated flux vs. Easting).
+
+Snowdrifts fill the networks of cracks between high-centered polygons (cf. Gamon et al 2012; Jorgenson and Osterkamp 2005) whose distribution is linked to ice wedges and their melting. Such polygon snowdrifts (Figure 1c) occur on spatial scales of several and up to tens of meters. The raised polygon centers are exposed scour zones while the inter-polygon troughs trap blowing snow.
+These drifts are less abundant in our two domains because of their foothill geography, they are ubiquiitous in Arctic lowlands such as the coastal plain (.e.g. ANWR 1002 area). Like watertracks, these snowdrifts are often filling and thus limited in growth by the depth and width of the inter-polygon trough., which are related to ice wedge degradation. Polygon snowdrifts are unlikely to occur in isolation and so their filling rate is also influenced by the filling state of neighboring uppwind drifts.
+
+Stream snowdrifts line the banks of drainage channels ranging in scale from small creeks to beaded streams to broad and braided glacial rivers. While some of these drainages may overlap in scale with water tracks, they are distinguished by having a sharper break in slope (i.e. a high profile curvature point) at the upwind edge of the channel. These sharp features (e.g. river cutbanks and bluffs) can create enormous snowdrifts when their trap volume (catchement depth * catchement width) exceeds the available winter flux - and in these instances such a nonfilling stream snowdrift is a record of the winter's flux from a certain direction (Benson ____). Stream snowdrifts bifurcate into filling and nonfilling types based on this flux to trap volume ratio. Trap volume is governed by channel processes. For stream drifts, the trap width alone plays an important role in snowdrift shape: if a trap is narrow enough the downwind edge of the channel also has a rotor effect on the wind field and creates a "snowdrift" on the opposite bank. Linear drainage channels may be good indicators of flux directions -they may have drifts on opposing banks indication a bidirectional source, for example, or snowdrifts may be conspicously absent after a 90 degree bend in the channel.
+
+Unlike the linear stream drifts, lake snowdrifts (Figure 1c) are often surrounded on all sides by topography with the potential to trap blowing snow.
+An imaginary isolated, infinitely incised lake woulc be a perfect drip trap capable of locking up all flux from all directions. Absent a confounding upwind landscape feature, lake drifts are also good indicators of flux direction. When filled, lake snowdrifts form smooth 'aprons' of a near-constant slope that can span substantial (~5 m) differences in elevation between the start of the drift and the lake ice below. Nonfilling lake drifts are often dramatic with sharp, corniced precipices.
+
+Outcrop snowdrifts occur in the lee of exposed sedimentary rocks (and so are only within CLPX) left behind by the Itkilik and Sagavanirktok glaciations of III to JJJ years ago. (geol. map REF). Outcrops snowdrifts are generally of two kinds: First, there are outcrops with drifts in the lee of steep windward faces that may also have wind hollows (REF) along their flanks and a "secondary" smaller snowdrift growing up against the windward side. Second, there are ourcrops with steep leeward faces where the windward feature is a ramp leading to the sharp cliff. This second type may function similarly to nonfilling stream drifts, although comparison is difficult because they have no well defined potential trap (and trap volume). The first type is more akin to an obstacle drift and may find better parallels in urban or forested drift environments. 
+
+Finally, the "other" snowdrift class has no obvious proximal cause or other conspicous landscape feature that aids interpretation. However, in our limited survey they frequently occur on hillslopes with mild grades of only a few degrees - suggesting that perhaps an upwind topographic ridge (or hillcrest) is creating an "aspect" (?) snowdrift in a similar fashion to the ridgeline wind transport and loading processes common in alpine snowcovers.
+
+The census of 59 snowdrifts yields 22 water track, 12 polygon, 7 stream, 7 lake, 5 outcrop, and 6 "other" snowdrifts. Zonal snow depth raster statistics were computed for each census member (Table 1).
+
+###### Table 4: Zonal Statistics by Study Area and Snowdrift Class.
+
+| Study Area | Drift Type | Drift Area [m^2] | Mean Drift Depth [m] | Mean Drift Volume [m^3] | Std. Drift Depth [m] | Median Drift Depth [m] | CV Drift Depth | Volume:Area Ratio |
+|:----------:|:----------:|:----------------:|:--------------------:|:-----------------------:|:--------------------:|:----------------------:|:--------------:|:-----------------:|
+|    CLPX    |    lake    |     23832.87     |         1.11         |         26790.93        |         0.25         |          1.09          |      0.22      |        1.11       |
+|    CLPX    |    other   |     212890.41    |         0.87         |        186951.75        |         0.13         |          0.86          |      0.15      |        0.87       |
+|    CLPX    |   outcrop  |      5432.37     |         1.32         |         7523.19         |         0.35         |          1.31          |      0.26      |        1.32       |
+|    CLPX    |   polygon  |      370.17      |         0.89         |          350.7          |         0.11         |          0.88          |      0.12      |        0.9        |
+|    CLPX    |   stream   |     20247.73     |         1.29         |         25456.22        |         0.32         |          1.28          |      0.25      |        1.29       |
+|    CLPX    | watertrack |      2288.22     |         0.87         |         2056.39         |          0.1         |          0.86          |      0.11      |        0.86       |
+|     HV     |    lake    |      71679.4     |         1.31         |         93953.47        |          0.3         |          1.32          |      0.23      |        1.31       |
+|     HV     |    other   |      12722.1     |         0.98         |         11358.4         |         0.19         |          0.98          |      0.19      |        0.98       |
+|     HV     |   polygon  |      850.86      |         0.84         |          720.4          |          0.1         |          0.84          |      0.11      |        0.85       |
+|     HV     |   stream   |      2182.59     |          1.1         |         2420.86         |         0.29         |          1.09          |      0.26      |        1.1        |
+|     HV     | watertrack |     20968.37     |         0.93         |         20217.42        |         0.28         |          0.88          |      0.31      |        0.92       |
+
+The snowdrift volume [m<sup>3</sup>] to snowdrift area [m<sup>2</sup>] ratio (SVAR) is greater for nonfilling drifts (outcrop, stream, lake) because they can trap more snow in a drift per unit area than their filling counterparts (water track, polygon, and perhaps "other"). In fact, snowdrifts with SVAR values less than about 1.0 (red line, Figure 2) are mostly of the filling type.
+SVAR is in a sense a measure of how filled a snowdrift is with respect to its class because each class has a different, characteristic 3-D shape (already recognized by Kuz'Min, Rikhter) that can be filled by drifting snow.
+
+###### Figure 7. SVAR by Snowdrift Class
+
+<img src="figs/pngs/drift_type_x_volume_area_ratio_y.png">
+
+
+The coeffcient of variance (CV) of snowdrift depth (Figure 3) infers the type of snow depth probabilty distribution one might find within each drift class. Polygon drift CV values are quite low indicating a more uniform depth distribution, likely an artifact of their filling nature and box-like geometry. Depths at polygon drift edges are not much different than the depths at drift centers. The range of CV values for water track drifts is surprising and highlights landscape-level differences in the drift regimes between CLPX and HV. All CLPX water track drifts have CV values less than 0.20 suggesting a different, more uniform trap geometry than for watertracks at HV. Lake and stream snowdrifts have overlapping CV values reflecting the similarity of their trap shapes and potential to manifest as filling or nonfilling drifts. The outcrop drifts have a wide range of CV values.
+
+###### Figure 8. CV by Snowdrift Class
+
+<img src="figs/pngs/drift_type_x_cv_depth_y.png">
+
+Filled drifts have lower SVAR values because their potential trap volume is too great to be filled by the available flux. The theoretical maximum SVAR for a certain drift is related to its equilbirium profile (Compute these? What does the SVAR look like for a Tabler profile?). Then we can know how far from filling they are and what the SVAR limit is. If we construct an artificial equilbrium drift what is the SVAR and what is the maxiumum slope of the drift?
+The upper SVAR limit will be different for a box shaped polygon crack than for a "spoon" shape like a water track. There is linear relationship between snowdrift area and volume that is characteristic of each snowdrift class (Figure 4).
+
+###### Figure 9. Least-squares Regression by Snowdrift Class
+
+<img src="figs/pngs/snowdrift_class_area_volume_linreg_3x2.png">
+
+
+
+The slopes of these lines (ranging between 0.8574 (polygon) and 1.5577 (outcrop) are the drift SWE [m] (?) per unit area of drift type. The spread in slopes (almost a factor of 2, Figure 5)  indicates that some landscapes are far more "primed" to trap snow in drifts than others.        
+
+###### Figure 10. Least-squares Regression for each Snowdrift Class with y-intercepts set to zero and plotted on a common range.
+
+<img src="figs/pngs/snowdrift_class_area_volume_linreg_all_set_yint0.png">
+
+If they truly existed on a small scale (like 0 to 100 square meters in this figure) we would expect the spread to be even greater because the nonfilling drifts would now likely be filled - thereby increasing the SVAR to the limit (stockpiling as much drift SWE as possible).
+
+What is the cutoff distance where wind no longer positive slope (far riverbank) has influence?
+
+Manually delinateing drifts is efficient although not easily automated. The need for topographic and geographic map interpretation, as well as the highly connected nature of snowdrifts (as they are related to hydrography) makes automatically separating and classifying drift types difficult. A more concerted automatic classifying effort could make progress using geomorphometry and hydrographic data.  
+
+### Snow Pattern Fidelity & Snowdrift Similarity
+
+## Discussion
+
+## Conclusion
+
+## References
 
 ##### Footnotes
 [^1]: Completing the triad, though outside the scope of this paper, is the physical linkage back from snow drifts to topography. In fact, persistent and long-lying snowdrifts can increase the depth and incision of the break in slope that produces a drift through nivation (erosional) processes (REFS). In short, drifts can and do "optimize" the terrain that makes them - a millennial, but very real process.
