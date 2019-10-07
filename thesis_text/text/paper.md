@@ -202,15 +202,33 @@ We have computed the four similarity metrics for all pairs (2012 vs. 2013, 2012 
 ###### Figure 17. Snow depth and similarity maps for CLPX outcrop drifts: 2012 vs. 2018. Star marker is the location of the least similar point as computed by each metric. Surface profiles run S to N (same as prevailing wind direction)through each least similar point.
 ![](../figs/pngs/iqamaps_snowprofiles.png)
 
-##### Table 5. Aggregate Similarity Results
+##### Table 5. Aggregate Similarity Results. Each AOI comparison pair (e.g. winter of 2012 compared to winter of 2013) is percentile ranked for similarity across all for metrics. Higher percentiles were more similar cases compared to the other observations.
+![](../figs/pngs/similarity_heatmap.png)
 
 ## Discussion
-Snowdrifts are the landscape in our field areas - they are the boundary surface between vegetation, soils, and permafrost and the atmosphere - and consequently have broad impacts on all types of biological and physical procesess. They are the landscape for several reasons. 
-- Convergence: Same patterns every year - better in filling than nonfilling environments. This is why persistence mapping works. Aspect important because of drifting...not sun exposure?
-- Trajectories converge (these are the weather plots we dreamed up in the tent)
-- Drift Definition can get you the SWE
-- Some landscapes more 'primed' for snowdrift
-- Circle back to drift --> Landscape --> Drift
+
+- The consistency of drift and scour (fidelity? similarity?) is surprising.
+    + Hinted at by others (e.g. Bloschl, Matthews, CSDP, newest snow pattern ref)
+    + But our lengthy time series w/ huge N validation and new metrics makes it bomb proof
+    + Gives us confidence that these snowdrifts **are** the landscape. 
+ 
+- Why do we get convergence?
+    - Flux is bound by climate (amount, direction)
+    - Snow accumulation bound by landscape - this is a double cone filter that reduces variability in ultimate snow depth pattern.
+    - Convergence is driven by repetition of filling and nonfilling drifts.
+    - Convegence is high on absolute scale (similarity test) but we do have differences!
+
+- Why are there relative differences in convergence?
+    + They are better in filling that non-filling environments
+    + So some places stockpile better than others....but we don't know what happens to flux after it passes over a filled drift. Presumably it lands in the next drift (nonfillers tend to gather densely in network...so do we lose flux???) or sublimates (maybe more likely toward end of winter).
+    + Trajectories may vary substantially - but cumulative result is quite similar (e.g. cumulative weather plots we dreamed up in the tent.)
+
+
+- Ramifications
+    + This is why persistence mapping works. Aspect important because of drifting...not sun exposure?
+    + Drift Definition --> SWE if you have depth, and we are getting closer to regional, near real-time snow depth maps.
+    + Some landscapes more 'primed' for snowdrift..but it is complicated
+    + Circle back to drift --> Landscape --> Drift
 
 ## Conclusion
  
