@@ -1,0 +1,12 @@
+Swath,Class,Drift Area $m^2$,Mean Depth $m$,Drift Volume $m^3$,Std. Depth $m$,CV Depth,NDV $m$
+CLPX,ice wedge (f),369,0.89,350,0.11,0.12,0.9
+HV,ice wedge (f),850,0.84,720,0.1,0.11,0.85
+CLPX,lake (nf),23832,1.11,26790,0.25,0.22,1.11
+HV,lake (nf),71678,1.31,93953,0.3,0.23,1.31
+CLPX,other,212890,0.87,186951,0.13,0.15,0.87
+HV,other,12722,0.98,11357,0.19,0.19,0.98
+CLPX,outcrop (nf),5431,1.32,7522,0.35,0.26,1.32
+CLPX,stream (nf),20247,1.29,25458,0.32,0.25,1.29
+HV,stream (nf),2182,1.1,2420,0.29,0.26,1.1
+CLPX,water track (f),2287,0.87,2056,0.1,0.11,0.86
+HV,water track (f),20967,0.93,20216,0.28,0.31,0.92
